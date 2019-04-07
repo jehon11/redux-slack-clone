@@ -6,8 +6,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { logger } from 'redux-logger';
 import promiseMiddleware from 'redux-promise';
 import MessagesReducer from './reducers/messages_reducer';
-import ChannelsReducer from './reducers/channels_reducer';
-import CurrentUserReducer from './reducers/current_user_reducer';
+import IdentityReducer from './reducers/identity_reducer';
 import SelectedChannelReducer from './reducers/selected_channel_reducer';
 
 // internal modules
@@ -39,8 +38,8 @@ const initialState = {
 // State and reducers
 const reducers = combineReducers({
   messages: MessagesReducer,
-  channels: ChannelsReducer,
-  currentUser: CurrentUserReducer,
+  channels: IdentityReducer,
+  currentUser: IdentityReducer,
   selectedChannel: SelectedChannelReducer
 });
 
