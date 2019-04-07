@@ -1,7 +1,18 @@
 body {
   font-family: Helvetica;
 }
-.app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.right-container {
+  height: 100vh;
+  .message-list {
+    max-height: 70%;
+    overflow: auto;
+  }
+  .message-form {
+    max-height: 30%
+  }
+}
+
+.left-container {
+  height: 100vh;
 }
